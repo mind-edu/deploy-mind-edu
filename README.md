@@ -13,13 +13,8 @@
 本项目在github的位置：https://github.com/mind-edu
 
 这是一个前后端分离的项目，前端使用Angular+Node.Js,后端是spring boot开发，使用的数据库为neo4j。
-因为本项目的neo4j是运行在docker中的，所以要用到linux系统，于是使用了云主机.neo4j运行在云主机，nodejs和spring boot 项目部署在本地。通信图如下。
-
-```mermaid
-graph TD
-A[nedejs] -->|依赖服务器| B(spring boot)
-B -->|依赖数据库| C(Neo4j)
-```
+因为本项目的neo4j是运行在docker中的，所以要用到linux系统，于是使用了云主机.neo4j运行在云主机，nodejs和spring boot 项目部署在本地。通信可以示例如下
+[nodejs] -->|依赖服务器| [spring boot] -->|依赖数据库| [Neo4j]
 #### 端口
    * neo4j的端口为7474，服务于spring boot
    * spring boot的端口为8899，服务于nedejs
@@ -49,8 +44,7 @@ git reset --hard 186ca6bdfa97184276aefb1f9754adc5b96c3803
 npm install
 npm start
 ```
-以上命令的含义为从github仓库中下载下来代码，回滚版本，
-npm安装依赖，快速启动服务器。
+以上命令的含义为从github仓库中下载下来代码，回滚版本，npm安装依赖，快速启动服务器。
 此时，可以在http://localhost:4200访问登录页面，但是，登录不进去，因为没有后台支持。
 ### 部署neo4j数据库
 在云主机部署数据库，服务器为centOs 阿里云
@@ -82,8 +76,6 @@ mvn spring-boot:run
 可见已经跑起来了。
 ### 部署成功
 可以在登录界面进入应用，刚开始时数据库时空的，所以要先注册，再登录。
-注册教师，并登录后的图例：
-![46e434c069e8bb66245e4e4c795d3b21.png](en-resource://database/1482:0)
 
 
 
