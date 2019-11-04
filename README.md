@@ -13,8 +13,9 @@
 本项目在github的位置：https://github.com/mind-edu
 
 这是一个前后端分离的项目，前端使用Angular+Node.Js,后端是spring boot开发，使用的数据库为neo4j。
-因为本项目的neo4j是运行在docker中的，所以要用到linux系统，于是使用了云主机.neo4j运行在云主机，nodejs和spring boot 项目部署在本地。通信可以示例如下
-[nodejs] -->|依赖服务器| [spring boot] -->|依赖数据库| [Neo4j]
+因为本项目的neo4j是运行在docker中的，所以要用到linux系统，于是使用了云主机，neo4j运行在云主机，nodejs和spring boot项目部署在本地。通信可以示例如下
+
+[nodejs] ---->|依赖服务器|[spring boot] --->|依赖数据库|[Neo4j]
 #### 端口
    * neo4j的端口为7474，服务于spring boot
    * spring boot的端口为8899，服务于nedejs
