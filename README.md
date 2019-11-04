@@ -29,12 +29,12 @@
    
 ### 部署nodejs前端
 在本地电脑windows 10 部署
-1.安装nodejs 
+1. 安装nodejs 
 参考：
 https://www.runoob.com/nodejs/nodejs-install-setup.html
 注意：
 nodejs 要10.6 版本以后
-2.进入打算将前端文件放置的文件夹,鼠标右键选择Git Bash Here
+2. 进入打算将前端文件放置的文件夹,鼠标右键选择Git Bash Here
 3.在出现的命令行程序中依次执行
 
 ```
