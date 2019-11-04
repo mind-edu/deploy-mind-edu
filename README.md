@@ -62,19 +62,12 @@ npm start
 1. 参考部署nodejs 的方式，将GraduationProject这个项目拖到本地
 2. 在intellij IDEA中导入这个项目。
 3. GraduationProject\src\main\resources\application.properties 是配置文件，在配置文件中更改
-
 spring.data.neo4j.uri
-
 spring.data.neo4j.username
-
 spring.data.neo4j.password
-
 为相应的值,本例为
-
 spring.data.neo4j.uri=http://47.100.41.221:7474/
-
 spring.data.neo4j.username=neo4j
-
 spring.data.neo4j.password=test
 4. 在IDEA 下面的Terminal中输入 mvn spring-boot:run 
 ```
