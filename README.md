@@ -63,9 +63,9 @@ npm start
 2. 在intellij IDEA中导入这个项目。
 3. GraduationProject\src\main\resources\application.properties 是配置文件，在配置文件中更改:
 ```
-  spring.data.neo4j.uri
-  spring.data.neo4j.username
-  spring.data.neo4j.password
+spring.data.neo4j.uri
+spring.data.neo4j.username
+spring.data.neo4j.password
 ```
 为相应的值,本例为
 ```
