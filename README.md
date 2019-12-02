@@ -1,13 +1,13 @@
 
 # 部署思维导图智能导学系统
 ### 知识点
-* nodejs
-* npm
-* spring boot 
-* docker
-* neo4j
-* git
-* maven
+- nodejs
+- npm
+- spring boot 
+- docker
+- neo4j
+- git
+- maven
 ### 项目概要
 
 本项目在github的位置：https://github.com/mind-edu
